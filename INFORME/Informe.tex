@@ -9,6 +9,7 @@
 \documentclass[report,oneside]{revcoles}
 \usepackage{float}
 \usepackage{multicol}
+\usepackage[top=2cm,bottom=1.5cm,left=1.5cm,right=1.5cm]{geometry}
 \usepackage[latin1]{inputenc}
 \labeldocument[
 university = Universidad del Valle,
@@ -171,6 +172,7 @@ $y_{ijk}=\mu+\tau_i+\beta_j+(\tau\beta)_{ij}+\varepsilon_{ijk} \;\;\; \left \{\b
 ~\\Todas las hipótesis anteriores se pueden probar realizando el análisis de varianza de dos factores como sigue:
 
 ~\\
+\begin{center}
 \resizebox{16.5cm}{!} {
 \begin{tabular}{|c|c|c|c|c|}
 \hline 
@@ -184,15 +186,35 @@ Total & abn-1 & $SC_{total}$ &  &   \\
 \hline 
 \end{tabular} 
 }
+\end{center}
 
 ~\\Donde la suma de cuadrados total es:
-$$SC_{total}=\sum\limits_{i=1}^a \sum\limits_{j=1}^b \sum\limits_{k=1}^n y^2_{ijk}-\frac{y^2_{...}}{abn}$$
+$$SC_{total}=\sum\limits_{i=1}^a \sum\limits_{j=1}^b \sum\limits_{k=1}^n y^2_{ijk}-\frac{y^2_{\ldots}}{abn}$$
 
 ~\\La suma de cuadrados de los efectos principales son:
 \begin{center}
-$SC_A=\frac{1}{bn}\sum\limits_{i=1}^a y^2_{i..} - \frac{y^2_{...}}{abn}\;\;$ y $\;\;SC_B=\frac{1}{an}\sum\limits_{j=1}^b y^2_{.j.} - \frac{y^2_{...}}{abn}$
+$SC_A=\frac{1}{bn}\sum\limits_{i=1}^a y^2_{i..} - \frac{y^2_{\ldots}}{abn}\;\;$ y $\;\;SC_B=\frac{1}{an}\sum\limits_{j=1}^b y^2_{.j.} - \frac{y^2_{\ldots}}{abn}$
 \end{center}
 
+~\\La suma de cuadrados de la interacción es:
+$$SC_{AB}=\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{ij.}-\frac{y^2_{\ldots}}{abn}-SC_{A}-SC_{B}$$
+
+~\\Y, la suma de cuadrados del error se encuentra como:
+$$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{ij.}-\frac{y^2_{\ldots}}{abn}$$
+
+\subsection{Ejemplo: Nuevos efectos del fraguado sobre el concreto asfáltico}
+~\\Se sabe que la variación en la resistencia de los especímenes de prueba está asociada con el método de fraguado y de mezcla usados para construirlos. Un ingeniero civil realizó un experimento para calificar las diferencias entre un conjunto de métodos de fraguado conforme sus efectos sobre la resistencia de los especímenes de prueba y para determinar hasta qué grado el tipo de mezcla afecta las comparaciones entre los métodos de fraguado.
+
+~\\\textbf{Diseño de tratamientos:} Se usó un arreglo factorial con los factores ``método de fraguado'' y ``tipo de mezclado''. Existen dos niveles de tipo de mezcla $A_1$(basalto) y $A_2$(roca silícea), y cuatro niveles de método de fraguado $C_1$(presión estática), $C_2$(amasado normal), $C_3$(amasado lento) y $C_4$(amasado muy lento).
+
+~\\\textbf{Diseño del experimento:} Se construyeron tres réplicas de especímenes y se probaron las ocho combinaciones. Los 24 especímenes se prepararon y probaron en orden aleatorio para un diseño totalmente aleatorizado.
+
+~\\Los datos de este experimento se encuentran en la siguiente tabla:
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.7]{FigurasUV/DEJ1.png}
+\end{figure}
 
 % //// --------------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------

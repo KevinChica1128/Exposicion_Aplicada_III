@@ -202,23 +202,37 @@ $$SC_{AB}=\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{ij.}-\frac{y^2_
 ~\\Y, la suma de cuadrados del error se encuentra como:
 $$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{ij.}-\frac{y^2_{\ldots}}{abn}$$
 
-\subsection{Ejemplo: Nuevos efectos del fraguado sobre el concreto asfáltico}
-~\\Se sabe que la variación en la resistencia de los especímenes de prueba está asociada con el método de fraguado y de mezcla usados para construirlos. Un ingeniero civil realizó un experimento para calificar las diferencias entre un conjunto de métodos de fraguado conforme sus efectos sobre la resistencia de los especímenes de prueba y para determinar hasta qué grado el tipo de mezcla afecta las comparaciones entre los métodos de fraguado.
-
-~\\\textbf{Diseño de tratamientos:} Se usó un arreglo factorial con los factores ``método de fraguado'' y ``tipo de mezclado''. Existen dos niveles de tipo de mezcla $A_1$(basalto) y $A_2$(roca silícea), y cuatro niveles de método de fraguado $C_1$(presión estática), $C_2$(amasado normal), $C_3$(amasado lento) y $C_4$(amasado muy lento).
-
-~\\\textbf{Diseño del experimento:} Se construyeron tres réplicas de especímenes y se probaron las ocho combinaciones. Los 24 especímenes se prepararon y probaron en orden aleatorio para un diseño totalmente aleatorizado.
-
-~\\Los datos de este experimento se encuentran en la siguiente tabla:
+\subsection{Ejemplo}
+~\\Un ingeniero está diseñando una batería que se usará en un dispositivo que se someterá a variaciones de temperatura extremas.  El único parámetro del diseño que puede seleccionar en este punto es el material de la placa o ánodo de la batería, y tiene tres elecciones posibles. Cuando el dispositivo esté fabricado y se envíe a campo, el ingeniero no tendrá control sobre las temperaturas extremas en las que operará el dispositivo, pero sabe por experiencia que la temperatura probablemente afectará la vida efectiva de la batería. Sin embargo, la temperatura puede controlarse en el laboratorio donde se desarrolla el producto para fines de prueba.
+~\\El ingeniero decide probar los tres materiales de la placa con tres niveles de temperatura(15,70 y 125$^{\circ}$F), ya que estos niveles de temperatura son consistentes con el medio ambiente donde se usará finalmente el producto. Se prueban cuatro baterías con cada combinación del material de la placa y la temperatura, y las 36 pruebas se corren de manera aleatoria. Los datos se presentan en la siguiente tabla.
 
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.7]{FigurasUV/DEJ1.png}
+  \includegraphics[scale=0.3]{FigurasUV/DEJ1.png}
 \end{figure}
 
+~\\Se analizaron todos los supuestos y no se presenta un incumplimiento de alguno, por lo que se procede a plantear las hipótesis para los efectos de ambos tratamientos y para el efecto de la interacción, y a interpretar el análisis de varianza que se muestra en la siguiente tabla
+~\\
+\begin{center}
+\resizebox{16.5cm}{!} {
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline 
+Fuente de Variación & Grados de Libertad & Suma de Cuadrados & Cuadrados Medios & F & Pr(>F) \\ 
+\hline 
+Material          &    2&  10639&  5319.5&  7.9308&  0.001952 **\\ 
+Temperatura       &    2&  39197& 19598.7& 29.2195& 1.762e-07 ***\\
+Material:Temperatura &  4&   9638&  2409.6&  3.5925&  0.017916 * \\ 
+Residuals        &    27&  18110&   670.7&        &             \\ 
+\hline 
+\end{tabular} 
+}
+\end{center}
+~\\La conclusión más importante que se obtiene del análisis de varianza es que el efecto de la interacción entre el material y la temperatura sobre la vida de las baterías(en horas) es significativo, esto quiere decir que en conjunto, la temperatura y el material afectan directamente la vida de las baterías. Ahora, analizando los factores individualmente, tanto el material como la temperatura son significativos, es decir, que cada uno por separado también tiene un efecto considerable sobre la vida de las baterías.
+
+~\\Posteriormente, se abordará el mismo ejemplo por medio de diseños factoriales fraccionados con el objetivo de realizar una comparación y poder observar cuánta información se pierde y cuánto varían los resultados con respecto al diseño factorial completo.
 \section{Diseños factoriales fraccionales}
 
-~\\En un diseño factorial conforme el número de factores del experimento crece, el número de casillas o condiciones experimentales (y por lo tanto el número de lecturas o pruebas necesarias), crece exponencialmente, Tambien crece el número de efectos a evaluar (interacciones principalmente) y el número de efectos y casillas varía con el número de factores en una relación como se muestra en la tabla siguiente para un experimento factorial $2^k$.
+~\\En un diseño factorial conforme el número de factores del experimento crece, el número de casillas o condiciones experimentales (y por lo tanto el número de lecturas o pruebas necesarias), crece exponencialmente, también crece el número de efectos a evaluar (interacciones principalmente) y el número de efectos y casillas varía con el número de factores en una relación como se muestra en la tabla siguiente para un experimento factorial $2^k$.
 
 \begin{figure}[h!]
   \centering
@@ -254,7 +268,7 @@ es necesario el correr una replicación completa de todo el experimento cuando el
 
 ~\\El objetivo del diseño factorial fraccionado (replicación fraccionada) es darle respuesta a estos interrogantes.
 
-\subsection{Fraccion un medio de un diseño $2^k$}
+\subsection{Fracción un medio de un diseño $2^k$}
 
 
 

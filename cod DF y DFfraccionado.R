@@ -11,18 +11,17 @@ datos=data.frame(Material,Temperatura,Vida)
 str(datos)
 head(datos)
 
-#Descriptivas
 X11()
 boxplot(Vida~Material*Temperatura, ylab="Vida Util")
 #grafico de efectos principales
 x11()
 Efectos <- data.frame(Material, Temperatura, Vida)
-plot.design(Efectos, fun="mean", main=" Gráfica de efectos principales", ylab= "Vida Util", xlab="Factor")
+plot.design(Efectos, fun="mean", ylab= "Vida Util", xlab="Factor")
 
 #Grafico de interacciones
 x11()
 interaction.plot(Material, Temperatura, Vida)
-#en otro orden
+
 x11()
 interaction.plot( Temperatura,Material, Vida)
 
@@ -42,7 +41,30 @@ cld(leastsquare1, alpha=.05, Letters=letters)
 leastsquare2 = lsmeans(mod, ~Temperatura|Material,  adjust="tukey")
 cld(leastsquare2, alpha=.05, Letters=letters)
 
+#DISEÑO FACTORIAL FRACCIONADO
+install.packages("AlgDesign")
+library("AlgDesign") 
 
+
+levels.design = c(3,3) 
+f.design <- gen.factorial(levels.design) 
+
+
+fract.design <- optFederov(
+  data=f.design, 
+  nTrials=sum(levels.design), 
+  approximate=TRUE) 
+
+#me saca la fraccion del diseño
+potDgn=optFederov(mod,data = datos,nTrials = 18)#el trial es el numero de datos que quiero
+#en mi fraccion como es 1/2 entonces son 18 datos
+
+
+#fraccion de diseño
+potDgn$design
+#MODELO FACTORIAL fraccionado
+mod2<-lm(Vida~Material+Temperatura+Material:Temperatura, data=potDgn$design)
+anova(mod2)
 
 
 

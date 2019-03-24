@@ -109,136 +109,94 @@ $$AB=\frac{(d-c)-(b-a)}{2}$$
 \end{frame}
 
 \begin{frame}
-\frametitle{Porcentaje de inercia explicado}
-\begin{figure}[h]
+\frametitle{Diseño Factorial}
+~\\Todas las hipótesis anteriores se pueden probar realizando el análisis de varianza de dos factores como sigue:
+
+\begin{table}[htbp]
   \centering
-  \includegraphics[scale=0.34]{imagenes/I.pdf}
-\end{figure}
+  \caption{ANOVA}
+\resizebox{12cm}{!} {
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Fuente de Variación & Grados de Libertad & Suma de Cuadrados & Cuadrados Medios & F \\ 
+\hline 
+$A$ & a-1 & $SC_A$ & $CM_A=\frac{SC_A}{a-1}$ & $F=\frac{CM_{A}}{CM_{error}}$ \\ 
+$B$ & b-1 & $SC_B$ & $CM_B=\frac{SC_B}{b-1}$ & $F=\frac{CM_{B}}{CM_{error}}$ \\
+$AB$ &(a-1)(b-1) & $SC_{AB}$ & $CM_{AB}=\frac{SC_{AB}}{(a-1)(b-1)}$ & $F=\frac{CM_{AB}}{CM_{error}}$ \\
+Error & ab(n-1) & $SC_{error}$ & $CM_{error}=\frac{SC_{error}}{ab(n-1)}$ &   \\ 
+Total & abn-1 & $SC_{total}$ &  &   \\ 
+\hline 
+\end{tabular} 
+}
+\label{tab:addlabel}%
+\end{table}%
 \end{frame}
 
 \begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Coordenadas
-\end{itemize}
+\frametitle{Diseño Factorial}
+~\\Donde la suma de cuadrados total es:
+$$SC_{total}=\sum\limits_{i=1}^a \sum\limits_{j=1}^b \sum\limits_{k=1}^n y^2_{ijk}-\frac{y^2_{\ldots}}{abn}$$
+
+~\\La suma de cuadrados de los efectos principales son:
 \begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
- & Dim.1  &     Dim.2 \\
-\hline
-1 & -1.3143364&  0.66717540 \\
-2 & -0.3841853&  0.79937921\\
-3 & -1.0565914&  0.62799661\\
-4 &  2.9064639& -0.12345710\\
-5 &  1.4632792&  0.92058312\\
-6 &  0.4665257&  0.06981062\\
-7 & -0.2300072& -0.89133817\\
-8 & -0.5225866& -1.13568796\\
-9 &  0.1370254& -0.90435088\\
-10& -1.3937676& -0.67628794\\
-11& -1.7680431&  0.54456430\\
-12&  1.6962234&  0.10161280\\
-\hline
-\end{tabular}
+$SC_A=\frac{1}{bn}\sum\limits_{i=1}^a y^2_{i..} - \frac{y^2_{\ldots}}{abn}\;\;$ y $\;\;SC_B=\frac{1}{an}\sum\limits_{j=1}^b y^2_{.j.} - \frac{y^2_{\ldots}}{abn}$
 \end{center}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Nube de individuos
-\end{itemize}
-\begin{figure}[h]
+\frametitle{Diseño Factorial}
+~\\La suma de cuadrados de la interacción es:
+$$SC_{AB}=\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{ij.}-\frac{y^2_{\ldots}}{abn}-SC_{A}-SC_{B}$$
+
+~\\Y, la suma de cuadrados del error se encuentra como:
+$$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{ij.}-\frac{y^2_{\ldots}}{abn}$$
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo de Diseño factorial}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Diseño Factorial $2^{k}$}
+~\\Existen varios casos especiales del diseño factorial general, los cuales son muy importantes debido a su uso generalizado en el trabajo de investigación. El más importante de estos casos especiales es el diseño de k factores, donde cada factor cuenta con sólo dos niveles. Estos niveles pueden ser tanto cuantitativos como cualitativos. Una réplica completa de este diseño requiere $2 x 2 x\cdots x 2 =2^k$ observaciones y se le llama diseño factorial $2^k$.
+\end{frame}
+
+\begin{frame}
+\frametitle{Diseño Factorial $ 2^{k} $}
+~\\El diseño $2^k$ es de particular utilidad en las etapas iniciales del trabajo experimental, cuando probablemente se estén investigando muchos factores. Este diseño proporciona el menor número de corridas con las que pueden estudiarse k factores en un diseño factorial completo.
+
+~\\El diseño $2^k$ es de particular utilidad en las etapas iniciales del trabajo experimental, cuando probablemente se estén investigando muchos factores. Este diseño proporciona el menor número de corridas con las que pueden estudiarse k factores en un diseño factorial completo.
+\end{frame}
+
+\begin{frame}
+\frametitle{Diseño Factorial $ 2^{k} $}
+~\\El modelo estadístico para un diseño $2^k$ incluiría k efectos principales, $\binom{k}{2}$ interacciones de dos factores, $\binom{k}{3}$ interacciones de tres factores,..., y una interacción de k factores. Es decir, para un diseño $2^k$ el modelo completo contendría $2^k-1$ efectos.
+
+~\\El enfoque general para el análisis estadístico del diseño $2^k$ se resume en la siguiente tabla
+\begin{table}[htbp]
   \centering
-  \includegraphics[scale=0.32]{imagenes/nubeind.pdf}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Contribuciones
-\end{itemize}
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
- & Dim.1  &     Dim.2 \\
-\hline
-1 &  7.82077792&  7.40334197 \\
-2 &  0.66821834& 10.62804681\\
-3 &  5.05418322&  6.55937355\\
-4 & 38.24430069&  0.25350113\\
-5 &  9.69373756& 14.09528211\\
-6 &  0.98534439&  0.08105705\\
-7 &  0.23950776& 13.21395346\\
-8 &  1.23638399& 21.45190194\\
-9 &  0.08500387& 13.60259270\\
-10 & 8.79463025&  7.60695852\\
-11 &14.15215481&  4.93226139\\
-12 &13.02575720&  0.17172937\\
-\hline
+  \caption{Enfoque del diseño  $ 2^{k} $}
+  \resizebox{4.7cm}{!} {
+\begin{tabular}{l}
+\hline 
+1. Estimar los efectos de los factores\\
+2. Formar el modelo inicial\\
+3. Realizar las pruebas estadísticas\\
+4. Refinar el modelo\\
+5. Analizar los residuales\\
+6. Interpretar los resultados\\
+\hline 
 \end{tabular}
-\end{center}
+}
+\label{tab:addlabel}%
+\end{table}%
 \end{frame}
 
 \begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Contribuciones
-\end{itemize}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.33]{imagenes/CID1.pdf}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Contribuciones
-\end{itemize}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.33]{imagenes/CID2.pdf}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Cosenos cuadrados
-\end{itemize}
-\begin{center}
-\begin{tabular}{|c|c|c|}
-\hline
- & Dim.1  &     Dim.2 \\
-\hline
-1 & 0.78366123& 0.201927428 \\
-2 & 0.10365480& 0.448759438\\
-3 & 0.72290537& 0.255377089\\
-4 & 0.97704556& 0.001762857\\
-5 & 0.65512731& 0.259296895\\
-6 & 0.17896249& 0.004007318\\
-7 & 0.04884725& 0.733571370\\
-8 & 0.16466255& 0.777671827\\
-9 & 0.01490332& 0.649165033\\
-10& 0.73853508& 0.173881625\\
-11& 0.88421345& 0.083882184\\
-12& 0.88317768& 0.003169413\\
-\hline
-\end{tabular}
-\end{center}
-\end{frame}
-
-\begin{frame}
-\frametitle{Resultados para los individuos}
-\begin{itemize}
-\item Cosenos cuadrados
-\end{itemize}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.33]{imagenes/C2ID1.pdf}
-\end{figure}
+\frametitle{Diseño Factorial $ 2^{k} $}
+~\\En este diseño, la tabla estándar se construye empezando con el primer factor con el signo(-) y alterna signos (-) y (+). El segundo factor cambia de signo cada dos observaciones ($2^1$), el tercer factor cada cuatro ($2^2$) y el factor k-ésimo cada $2^{k-1}$ observaciones. las interacciones de los factores tienen los signos que se obtienen de multiplicar los signos de los factores implicados. Por ejemplo, en el diseño $2^3$ la tabla estándar con las interacciones es:
 \end{frame}
 
 \begin{frame}

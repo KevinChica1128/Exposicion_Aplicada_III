@@ -52,10 +52,24 @@ colnames(nueva)=c("H","J","K","O")
 
 
 #MODELO FACTORIAL
-mod6<-lm(O~H+J+K+H:J:K, data=nueva)
+mod6<-lm(O~H+J+K, data=nueva)
 anova(mod6)
 
 #grafico de efectos principales
 x11()
 Efectos <- data.frame(H,J,K,O)
 plot.design(Efectos, fun="mean", main=" Gráfica de efectos principales", ylab= "Vida Util", xlab="Factor")
+
+
+#Diseño factorial completo con una sola replica.
+Respuesta1<-c(4,4,20,4,7,2,10,14)
+#Se arma la tabla de diseño
+library(FrF2)
+Tabla <- FrF2(nruns = 8, 
+              nfactors = 3, 
+              factor.names = list(A=c("-","+"), 
+                                  B=c("-","+"), 
+                                  C=c("-","+")),
+              replications = 1, randomize = F)
+Tabla <- add.response(design = Tabla, response = Respuesta1)
+Tabla

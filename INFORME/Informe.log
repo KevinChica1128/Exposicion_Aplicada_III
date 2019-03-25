@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  24 MAR 2019 22:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  24 MAR 2019 22:54
 entering extended mode
 **./Informe.tex
 (Informe.tex
@@ -338,22 +338,8 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\latin1.def"
 File: latin1.def 2018/08/11 v1.3c Input encoding file
 )) (Informe.aux
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.6 <
-     <<<<<< HEAD
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Info: Redefining \. on input line 7.
-LaTeX Info: Redefining \% on input line 7.
-
-LaTeX Warning: Label `tab:addlabel' multiply defined.
+LaTeX Info: Redefining \. on input line 6.
+LaTeX Info: Redefining \% on input line 6.
 
 
 LaTeX Warning: Label `tab:addlabel' multiply defined.
@@ -374,26 +360,9 @@ LaTeX Warning: Label `tab:addlabel' multiply defined.
 LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 
-! LaTeX Error: \begin{document} ended by \end{quoting}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.37 >>
-       >>>>> 6a5c09554dd44fd5313db6abb457f4c1b83cd669
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+LaTeX Warning: Label `tab:addlabel' multiply defined.
 
 )
-! Extra \endgroup.
-\document ...lax \@input {\jobname .aux}\endgroup 
-                                                  \if@filesw \immediate \ope...
-l.44 \begin{document}
-                     
-Things are pretty mixed up, but I think the worst is over.
-
 \openout1 = `Informe.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -535,10 +504,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6025 strings out of 492946
- 84682 string characters out of 3135510
- 182985 words of memory out of 3000000
- 9780 multiletter control sequences out of 15000+200000
+ 6024 strings out of 492946
+ 84677 string characters out of 3135510
+ 182922 words of memory out of 3000000
+ 9779 multiletter control sequences out of 15000+200000
  24417 words of font info for 74 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
  43i,13n,40p,682b,363s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -550,13 +519,13 @@ a\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecti0900.pk> <C:\Users\KE
 VINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0800.
 pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/
 dpi600\ecrm0600.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
-2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\KEVINSTEVEN\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440.pk> <C:\Users\K
-EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0900
+our/jknappen/ec/dpi600\ecrm1000.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\
+2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm0700.pk> <C:\Users\KEVINSTEVEN\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\eccc1000.pk> <C:\Users\K
+EVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1440
 .pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecbx0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/jknappen/ec/dpi600\ecrm1000.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+/dpi600\ecrm0900.pk> <C:\Users\KEVINSTEVEN\AppData\Local\MiKTeX\2.9\fonts/pk/lj
+four/jknappen/ec/dpi600\ecbx0900.pk><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pf
@@ -567,9 +536,9 @@ s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX 2
 ype1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy7.pfb>
-Output written on Informe.pdf (7 pages, 230826 bytes).
+Output written on Informe.pdf (7 pages, 229295 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
+ 423 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

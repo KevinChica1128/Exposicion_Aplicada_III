@@ -3,7 +3,7 @@
 #Alejandro Soto - 1532457
 #Diseños factoriales fraccionados
 
-##Datos diseño para ejemplo
+##Datos diseño para ejemplo 1
 FA=c(rep("0",8),rep("1",8))
 FC=c(rep(c("0","0","1","1"),4))
 FB=c(rep(c(rep("0",4),rep("1",4)),2))
@@ -55,12 +55,7 @@ colnames(nueva)=c("H","J","K","O")
 mod6<-lm(O~H+J+K, data=nueva)
 anova(mod6)
 
-#grafico de efectos principales
-x11()
-Efectos <- data.frame(H,J,K,O)
-plot.design(Efectos, fun="mean", main=" Gráfica de efectos principales", ylab= "Vida Util", xlab="Factor")
-
-
+#Ejemplo2
 #Diseño factorial completo con una sola replica.
 #Ingresamos los datos
 A<-c(rep(c("0","1"),8))
@@ -152,13 +147,3 @@ x11()
 qqnorm(Efectos)
 qqline(Efectos)
 text(c(0.7,-0.3,-0.07,0.42,-0.68,-1.28,1.27),Efectos,c("A","B","C","D","AB","AC","AD"))
-#Análisis método de Daniel
-x11()
-DanielPlot(Tabla2)
-
-#Gráfico efectos principales
-MEPlot(Tabla2, lwd = 2)
-abline(h=0, col="red")
-
-## Gráficas de Interacciones
-IAPlot(Tabla, lwd = 2)

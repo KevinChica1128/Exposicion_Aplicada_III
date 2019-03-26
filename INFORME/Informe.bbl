@@ -1,0 +1,41 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{{\em Análisis y diseño de experimentos}}{2008}{Diseño3}
+{\em Análisis y diseño de experimentos}  \harvardyearleft 2008\harvardyearright
+  .
+
+\harvarditem{Castro}{n.d.}{Diapos1}
+Castro, E.~C.  \harvardyearleft n.d.\harvardyearright , `Una sola réplica en el
+  diseño $2^k$'.
+\newline\harvardurl{https://slideplayer.es/slide/6143452/}
+
+\harvarditem{{\em Diseño de experimentos}}{2001}{Diseño2}
+{\em Diseño de experimentos}  \harvardyearleft 2001\harvardyearright .
+
+\harvarditem{{\em Diseño y análisis de experimentos}}{2004}{Diseño}
+{\em Diseño y análisis de experimentos}  \harvardyearleft 2004\harvardyearright
+  .
+
+\harvarditem{Gr"omping}{2014}{DR2}
+Gr"omping, U.  \harvardyearleft 2014\harvardyearright , `{R} package {FrF2} for
+  creating and analyzing fractional factorial 2-level designs', {\em Journal of
+  Statistical Software} {\bf 56}(1),~1--56.
+\newline\harvardurl{http://www.jstatsoft.org/v56/i01/}
+
+\harvarditem{{R Core Team}}{2017}{R}
+{R Core Team}  \harvardyearleft 2017\harvardyearright , {\em R: A Language and
+  Environment for Statistical Computing}, R Foundation for Statistical
+  Computing, Vienna, Austria.
+\newline\harvardurl{https://www.R-project.org/}
+
+\harvarditem{Villagarcía}{n.d.}{Diapos}
+Villagarcía, T.  \harvardyearleft n.d.\harvardyearright , `Diseños factoriales
+  a dos niveles'.
+
+\harvarditem{Wheeler}{2014}{DR}
+Wheeler, B.  \harvardyearleft 2014\harvardyearright , {\em AlgDesign:
+  Algorithmic Experimental Design}.
+\newblock R package version 1.1-7.3.
+\newline\harvardurl{https://CRAN.R-project.org/package=AlgDesign}
+
+\end{thebibliography}

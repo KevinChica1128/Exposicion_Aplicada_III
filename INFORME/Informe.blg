@@ -1,10 +1,15 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: Informe.aux
 The style file: agsm.bst
 Database file #1: references.bib
-Warning--empty author and editor in Diseño3
-Warning--empty publisher in Diseño3
-Warning--empty author and editor in Diseño2
-Warning--empty publisher in Diseño2
-Warning--empty author and editor in Diseño
-Warning--empty publisher in Diseño
-(There were 6 warnings)
+I was expecting a `,' or a `}'---line 40 of file references.bib
+ : 
+ : @Article{DR2,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--can't use both author and editor fields in Diseno2
+Warning--empty publisher in Diseno2
+Warning--can't use both author and editor fields in Diseno
+Warning--empty publisher in Diseno
+Warning--can't use both author and editor fields in Diseno3
+Warning--empty publisher in Diseno3
+(There was 1 error message)

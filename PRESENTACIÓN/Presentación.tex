@@ -407,125 +407,296 @@ $$I=ABC$$
 \end{frame}
 
 \begin{frame}
-\frametitle{Coeficiente Lg}
-~\\Los coeficientes Lg se pueden observar en la siguiente tabla:
-\begin{center}
-\resizebox{12cm}{!}{
-\begin{tabular}{cccc}
-\hline
- &Percepción previa & Percepción posterior &      MFA\\
-Percepción previa   &         1.0839432     &       0.7761085 &1.0105158\\
-Percepción posterior       &  0.7761085        &    1.0384112 &0.9857795\\
-MFA                       &   1.0105158         &   0.9857795 &1.0845333\\
-\hline 
-\end{tabular}
-} 
-\end{center}
-~\\El valor del coeficiente $Lg_{(P.Previa)}=1.0839$ para la percepción previa indica que es de dimensionalidad uno, es decir, que puede sintetizarse en un solo factor; $Lg_{(P.Posterior)}=1.0384$ indica que la percepción posterior también tiene una dimensión o factor que lo caracteriza. El coeficiente Lg cruzado $Lg_{(P.Prev,P.Post)}=0.7761$ indica que estos dos grupos comparten un factor; y finalmente, el coeficiente $Lg_{(MFA)}=1.0845$ indica que éste se puede sintetizar como mínimo en un factor.
+\frametitle{Ejemplos}
+Una empresa que fabrica juguetes tiene 3 estaciones de ensamble (A,B,C) y cada estación funciona en dos velocidades distintas (Alta y Baja), se desea conocer el efecto que tienen en conjunto las diferentes velocidades sobre la cantidad de juguetes ensamblados en un día. Los datos se muestran en la siguiente tabla
 \end{frame}
 
 \begin{frame}
-\frametitle{Coeficiente Rv de Escoufier}
-~\\ Es una generalización multivariada del coeficiente de correlación de Pearson al cuadrado. Este coeficiente mide el vínculo entre dos grupos o dos matrices de variables. Este coeficiente, al igual que el de correlación de Pearson, se encuentra entre 0(todas las variables del primer grupo o matriz, son ortogonales a todas las variables del segundo grupo o matriz) y 1(los dos grupos o matrices son homotéticos)
-
-~\\El coeficiente de RV se define como (Robert y Escoufier, 1976; Schlich, 1996):
-
-$$RV(W_i,Wj)=\frac{T(W_i,W_j)}{\left[T(W_i,W_i)\cdot T(W_j,W_j)\right]^\frac{1}{2}}$$
+\frametitle{Ejemplos}
+\begin{table}[htbp]
+  \centering
+  \caption{Datos ejemplo diseño $2^3$}
+  \resizebox{0.6\textwidth}{!}{
+    \begin{tabular}{c|c|c|c|c}
+\cline{2-5}    \multicolumn{1}{c}{} & \multicolumn{4}{c}{ESTACIÓN B} \\
+\cline{2-5}    \multicolumn{1}{c}{} & \multicolumn{2}{c}{BAJA} & \multicolumn{2}{c}{ALTA} \\
+\cline{2-5}    \multicolumn{1}{c}{ESTACIÓN A} & \multicolumn{2}{c}{ESTACIÓN C} & \multicolumn{2}{c}{ESTACIÓN C} \\
+    \hline
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{BAJA} & \multicolumn{1}{c}{ALTA} & \multicolumn{1}{c}{BAJA} & ALTA \\
+    \hline
+    \multirow{2}[1]{*}{BAJA} & 4     & 7     & 20    & 10 \\
+          & 5     & 9     & 14    & 6 \\
+    \multirow{2}[1]{*}{ALTA} & 4     & 2     & 4     & 14 \\
+          & 11    & 7     & 6     & 16 \\
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}%
 \end{frame}
 
 \begin{frame}
 \justifying
-\frametitle{Coeficiente Rv de Escoufier}
-~\\Donde $T(W_i,W_j)=\sum\limits_{l,m}w_{l,m}^i w_{l,m}^j$ es un coeficiente de covarianza generalizado entre las matrices $W_i$ y $W_j$, $T(W_i,W_i)=\sum\limits_{l,m}{w_{l,m}^i}^2 $ es una varianza generalizada de la matriz $W_i$ y $w_{l,m}^2$ es el (l,m) elemento de la matriz $W_i$.
-
-~\\Los coeficientes Rv se pueden observar en la siguiente tabla:
+\frametitle{Ejemplo diseño factorial completo}
+Según los datos de la tabla, se tiene que:
 \begin{center}
-\resizebox{12cm}{!}{
-\begin{tabular}{cccc}
-\hline
- &Percepción previa &Percepción posterior   &    MFA \\
-Percepción previa &           1.0000000      &      0.7315340& 0.9320054\\
-Percepción posterior&         0.7315340       &     1.0000000& 0.9289101\\
-MFA                  &        0.9320054        &    0.9289101& 1.0000000\\
-\hline 
-\end{tabular} 
-}
+~\\$(1)=9 \;\;\; c=16 \;\;\; b=34 \;\;\; bc=16 \;\;\; a=15 \;\;\; ac=9 \;\;\; ab=10 \;\;\; abc=30$
 \end{center}
+
+~\\Y los efectos serán
+\begin{center}
+$A=\frac{1}{8}[15-9+10-34+9-16+30-16]=-\frac{11}{8}=-1.375$
+~\\$B=\frac{1}{8}[34+10+16+30-(9+15+16+9)]=\frac{41}{8}=5.125$
+~\\$C=\frac{1}{8}[16+9+16+30-(9+15+34+10)]=\frac{3}{8}=0.375$
+~\\$AB=\frac{1}{8}[9+10+16+30-(15+34+9+16)]=-\frac{9}{8}=-1.125$
+~\\$AC=\frac{1}{8}[9+34+9+30-(15+10+16+16)]=\frac{25}{8}=3.125$
+~\\$BC=\frac{1}{8}[9+15+16+30-(34+10+16+9)]=\frac{1}{8}=0.125$
+~\\$ABC=\frac{1}{8}[30+15+34+16-(10+9+16+9)]=\frac{51}{8}=6.375$
+\end{center}
+
 \end{frame}
 
 \begin{frame}
 \justifying
-\frametitle{Coeficiente Rv de Escoufier}
-~\\Los valores de los coeficientes $Rv_{(MFA,P.Previa)}=0.932$ y $Rv_{(MFA,P.Posterior)}=0.9289$ nos indican que ambos grupos (percepción previa y posterior) tienen una estructura cercana a la de toda la degustación ó en otras palabras, tienen un grado considerable de asociación con el AFM. Es decir, que su representación sobre los planos generados por el AFM es adecuada. Además, entre la percepción previa y posterior el coeficiente Rv es de 0.7315340 lo que significa que existe un vinculo considerable entre estos dos grupos (algunas de las variables del primer grupo están asociadas con las del segundo grupo).
-\end{frame}
-
-\begin{frame}
-\frametitle{Representación superpuesta}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.34]{imagenes/RS.pdf}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Ejes parciales}
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale=0.34]{imagenes/EP.pdf}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Construcción indice}
-Las coordenadas de las variables para las dos primeras dimensiones son:
-
+\frametitle{Ejemplo diseño factorial completo}
+~\\Y las sumas de cuadrados serán
 \begin{center}
-\resizebox{10cm}{!}{
-\begin{tabular}{ccc}
-\hline 
- & Dim.1  &    Dim.2   \\   
-\hline   
-Color.intensity &  0.8581049&  0.2236407 \\ 
-Odor.intensity  &  0.6316557&  0.7028833 \\
-Attack.intensity & 0.9522195& -0.2260020  \\
-Sweet           & -0.8881581& -0.1346408  \\
-Acid             & 0.9028145& -0.3139184  \\
-Bitter           & 0.9640321&  0.1981328 \\
-Pulp             &-0.6320766&  0.7018089 \\
-Typicity         &-0.8054955&  0.3978624  \\
-\hline
-\end{tabular}
-}
+$SC_A=\frac{1}{16}(-11)^2=7.56$
+~\\$SC_B=\frac{1}{16}(41)^2=105.06$
+~\\$SC_C=\frac{1}{16}(3)^2=0.56$
+~\\$SC_{AB}=\frac{1}{16}(9)^2=5.06$
+~\\$SC_{AC}=\frac{1}{16}(25)^2=39.06$
+~\\$SC_{BC}=\frac{1}{16}(1)^2=0.06$
+~\\$SC_{ABC}=\frac{1}{16}(51)^2=162.56$
+~\\$SC_{total}=(4^2+5^2+\cdots+14^2+16^2)-\frac{1}{16}139^2=389.44$
+~\\$SC_{error}=69.52$
 \end{center}
 \end{frame}
 
 \begin{frame}
-\frametitle{Construcción indice}
-~\\El indice para el primer grupo (percepción previa) es:
-$$I=0.8581049 Color+0.6316557 Odor+0.9522195 Attack$$
-\begin{center}
-\resizebox{3cm}{!}{
-\begin{tabular}{cc}
-\hline 
- Jugo & Indice  \\   
-\hline   
-1 & 11.03415 \\
-2 &  11.823 \\
-3 & 11.16971\\ 
-4 & 16.35666\\
-5 & 14.28656\\ 
-6 & 13.58883\\ 
-7 & 11.71434\\ 
-8 & 11.12588\\ 
-9 & 11.61305\\ 
-10& 10.57015\\ 
-11& 10.35774\\ 
-12& 14.9813 \\  
-\hline
-\end{tabular}
-}
-\end{center}
+\frametitle{Ejemplo diseño factorial completo}
+~\\Teniendo en cuenta lo anterior, la tabla de análisis de varianza es
+\begin{table}[H]
+  \centering
+  \caption{Análisis de varianza factorial completo}
+  \resizebox{0.85\textwidth}{!}{
+    \begin{tabular}{cccccc}
+    \hline
+    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
+    \hline
+   \textbf{Factor A} & 1 & 7.56 & 7.56 & 0.87 & 0.3781\\
+   \textbf{Factor B} & 1 & 105.06 & 105.06 & 12.09 & 0.0083* \\  
+   \textbf{Factor C} & 1 & 0.56 & 0.56 & 0.06 & 0.8055 \\
+   \textbf{Interacción AB} & 1 & 5.06 & 5.06 & 0.58 & 0.4671\\
+   \textbf{Interacción AC} & 1 & 39.06 & 39.06 & 4.49 & 0.0667 \\
+   \textbf{Interacción BC} & 1 & 0.06 & 0.06 & 0.01 & 0.9345 \\
+   \textbf{Interacción ABC} & 1 & 162.56 & 162.56 & 18.71 & 0.0025* \\
+   \textbf{Residual} & 8 & 69.52 & 8.62 & \\
+   \textbf{Total}  & 15 & 389.44 &  &\\
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}%
 \end{frame}
+
+\begin{frame}
+En este caso, la fracción un medio del diseño $2^3$ está compuesto por los factores A, B, C y la interacción ABC.
+~\\Como se utilizó la relación de definición de diseño $I=ABC$, se deducen los alias $A=BC$, $B=AC$ y $C=AB$ De esta forma si alguno de los Alias A,B,C es significativo podemos inferir que la interacción ABC también lo es.
+
+~\\La ANOVA de la fracción un medio del diseño $2^k$ es
+\begin{table}[H]
+  \centering
+  \caption{Análisis de varianza factorial fraccionado}
+  \resizebox{0.85\textwidth}{!}{
+    \begin{tabular}{cccccc}
+    \hline
+    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
+    \hline
+   \textbf{A} & 1 & 3.125 & 3.125 & 0.2688 & 0.6315\\
+   \textbf{B} & 1 & 136.125 & 136.125 & 11.7097 & 0.02673* \\  
+   \textbf{C} & 1 & 1.125 & 1.125 & 0.0968 & 0.77127 \\
+   \textbf{Residual} & 4 & 46.5 & 11.625 & \\
+   \textbf{Total}  & 7 & 186.875 &  &\\
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo de diseño factorial completo con una sola replica}
+~\\Un producto químico se fabrica en un envase presurizado. Se lleva a cabo un experimento factorial en la planta piloto para estudiar los factores que se piensa influyen en el índice de filtración de este producto. Los cuatro factores son la temperatura(A), la presión(B), la concentración del formaldehído(C) y la velocidad de agitación(D). Cada factor está presente con dos niveles. La matriz de diseño es la siguiente
+\end{frame}
+\begin{frame}
+\frametitle{Ejemplo de diseño factorial completo con una sola replica}
+\begin{table}[htbp]
+  \centering
+  \caption{Matriz de diseño ejemplo con una sola réplica}
+  \resizebox{0.65\textwidth}{!}{    
+    \begin{tabular}{ccccccc}
+    \hline
+    \textbf{Número de} & \multicolumn{4}{c}{\textbf{Factor}} & \textbf{Etiqueta de} & \textbf{Índice de } \\
+\cline{2-5}    \multicolumn{1}{p{8.43em}}{\textbf{corrida}} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D} & \textbf{la corrida} & \textbf{filtración (gal/h)} \\
+    \hline
+    \textbf{1} & -     & -     & -     & -     & (1)     & 45 \\
+    \textbf{2} & +     & -     & -     & -     & a     & 71 \\
+    \textbf{3} & -     & +     & -     & -     & b     & 48 \\
+    \textbf{4} & +     & +     & -     & -     & ab    & 65 \\
+    \textbf{5} & -     & -     & +     & -     & c     & 68 \\
+    \textbf{6} & +     & -     & +     & -     & ac    & 60 \\
+    \textbf{7} & -     & +     & +     & -     & bc    & 80 \\
+    \textbf{8} & +     & +     & +     & -     & abc   & 65 \\
+    \textbf{9} & -     & -     & -     & +     & d     & 43 \\
+    \textbf{10} & +     & -     & -     & +     & ad    & 100 \\
+    \textbf{11} & -     & +     & -     & +     & bd    & 45 \\
+    \textbf{12} & +     & +     & -     & +     & abd   & 104 \\
+    \textbf{13} & -     & -     & +     & +     & cd    & 75 \\
+    \textbf{14} & +     & -     & +     & +     & acd   & 86 \\
+    \textbf{15} & -     & +     & +     & +     & bcd   & 70 \\
+    \textbf{16} & +     & +     & +     & +     & abcd  & 96 \\
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo de diseño factorial completo con una sola replica}
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[scale=0.40]{imagenes/DEJ.pdf}
+  \caption{Gráfica QQplot de los efectos}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo de diseño factorial completo con una sola replica}
+~\\La ANOVA da como resultado
+\begin{table}[H]
+  \centering
+  \caption{Análisis de varianza una sola réplica}
+  \resizebox{0.95\textwidth}{!}{
+    \begin{tabular}{cccccc}
+    \hline
+    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
+    \hline
+   \textbf{A} & 1 & 1870.56 & 1870.56& 83.3677& 1.667e-05 ***\\
+   \textbf{C} & 1 & 390.06 & 390.06& 17.3844& 0.0031244 **  \\  
+   \textbf{D} & 1 &  855.56&  855.56& 38.1309& 0.0002666 *** \\
+   \textbf{A:C} & 1 & 1314.06& 1314.06& 58.5655& 6.001e-05 *** \\
+   \textbf{A:D} & 1 & 1105.56& 1105.56& 49.2730& 0.0001105 *** \\
+   \textbf{C:D} & 1 &   5.06 &   5.06&  0.2256& 0.6474830 \\
+   \textbf{A:C:D} & 1 &  10.56 &  10.56&  0.4708& 0.5120321 \\
+   \textbf{Residual} & 8 &  179.50 &  22.44 & \\
+   
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}%       
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+
+~\\Se retoma el ejemplo anterior y se propone una fracción un medio del diseño $2^4$. Se usará el diseño $2^{4-1}$ con $I=ABCD$. Para construir el diseño, primero se apunta el diseño básico, el cual es un diseño $2^3$. Para encontrar los niveles del cuarto factor, se resuelve $I=ABCD$ para $D$, o $D=ABC$. Por lo tanto, el nivel de D de cada corrida es el producto de los signos positivos y negativos de las columnas A,B y C. El proceso se ilustra en la siguiente tabla
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+\begin{table}[htbp]
+  \centering
+  \caption{Matriz de diseño $2^4$ fraccionado un medio}
+  \resizebox{0.85\textwidth}{!}{ 
+    \begin{tabular}{ccccccc}
+    \hline
+    \textbf{Número de} & \multicolumn{3}{c}{\textbf{Diseño básico}} &       & \textbf{Combinación de} & \textbf{Índice de } \\
+\cline{2-4}    \multicolumn{1}{p{6.5em}}{\textbf{corrida}} & \textbf{A} & \textbf{B} & \textbf{C} & \textbf{D=ABC} & \textbf{tratamientos} & \textbf{filtración (gal/h)} \\
+    \hline
+    \textbf{1} & -     & -     & -     & -     & (1)     & 45 \\
+    \textbf{2} & +     & -     & -     & +     & ad    & 100 \\
+    \textbf{3} & -     & +     & -     & +     & bd    & 45 \\
+    \textbf{4} & +     & +     & -     & -     & ab    & 65 \\
+    \textbf{5} & -     & -     & +     & +     & cd    & 75 \\
+    \textbf{6} & +     & -     & +     & -     & ac    & 60 \\
+    \textbf{7} & -     & +     & +     & -     & bc    & 80 \\
+    \textbf{8} & +     & +     & +     & +     & abcd  & 96 \\
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}%
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+
+~\\Utilizando la relación de definición del diseño $I=ABCD$, podemos deducir que cada uno de los efectos principales es alias de una interacción de tres factores como sigue, $A=BCD$,$B=ACD$,$C=ABD$,$D=ABC$, y además, cada interacción de dos factores es alias de otra interacción de dos factores como sigue, $AB=CD$,$AC=BD$ y $BC=AD$
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+~\\En la tabla \textbf{tal} se muestran las estimaciones de los efectos obtenidas de este diseño. Para mostrar los cálculos, la combinación lineal de las observaciones asociadas con el efecto de A es
+$$L_A=\frac{1}{4}(-45+100-45+65-75+60-80+96)=19 \rightarrow \;\;\; A+BCD $$
+~\\Mientras que para el efecto AB se obtendría
+$$L_{AB}=\frac{1}{4}(45-100-45+65+75-60-80+96)=-1 \rightarrow \;\;\; AB+CD $$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+\begin{table}[H]
+  \centering
+  \caption{Estimaciones de los efectos y los alias}
+  \resizebox{0.4\textwidth}{!}{
+    \begin{tabular}{cc}
+    \hline
+    \textbf{Estimación} & \textbf{Estructura de los alias} \\
+    \hline
+  	$L_{A}=19$ & $L_{A} \rightarrow \;\;A+BCD $ \\
+  	$L_{B}=1.5$ & $L_{B} \rightarrow \;\;B+ACD $ \\
+  	$L_{C}=14$ & $L_{C} \rightarrow \;\;C+ABD $ \\
+  	$L_{D}=16.5$ & $L_{D} \rightarrow \;\;D+ABC $ \\
+  	$L_{AB}=-1$ & $L_{AB} \rightarrow \;\;AB+CD $ \\
+  	$L_{AC}=-18.5$ & $L_{AC} \rightarrow \;\;AC+BD $ \\
+  	$L_{AD}=19$ & $L_{AD} \rightarrow \;\;AD+BC $ \\
+    \hline
+    \end{tabular}%
+    }
+  \label{tab:addlabel}%
+\end{table}% 
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+~\\De la tabla anterior, podemos concluir que los efectos principales $A$, $C$ y $D$ son grandes. Además, si $A$, $C$ y $D$ son los efectos principales importantes, entonces es lógico concluir que las dos cadenas de alias de interacciones $AC+BD$ y $AD+BC$ tienen efectos grandes, ya que las interacciones $AC$ y $AD$ también son significativas. Puesto que el factor B no es significativo, puede sacarse de consideración.
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+~\\Con base en el análisis anterior, puede obtenerse ahora un modelo para predecir el índice de filtración en la región experimental. Este modelo es
+$$\hat{y}=\hat{\beta_0}+\hat{\beta_1}x_1+\hat{\beta_3}x_3+\hat{\beta_4}x_4+\hat{\beta_{13}}x_1x_3+\hat{\beta_{14}}x_1x_4$$
+~\\Donde $x_1$,$x_3$ y $x_4$ son variables codificadas $(-1\leq x_i\leq +1)$ y las $\beta$ son los coeficientes de regresión que se obtienen dividiendo la estimación del efecto por 2. Por lo tanto, la ecuación es:
+$$\hat{y}=70.75+\left(\frac{19}{2}\right)x_1+\left(\frac{14}{2}\right)x_3+\left(\frac{16.5}{2}\right)x_4+\left(\frac{-18.5}{2}\right)x_1x_3+\left(\frac{19}{2}\right)x_1x_4$$
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+~\\La principal conclusión que obtenemos es que los diseños factoriales fraccionados son una alternativa muy útil cuando se tienen muchos factores y los recursos para llevar a cabo el experimento son limitados.
+
+~\\ viendo los experimentos esto nos lleva a concluir que los diseños factoriales fraccionados son muy importantes, ya que con la mitad o menos de las corridas se llegan a resultados muy semejantes a si se hiciera completo, esto es muy útil ya que en la practica la mayoría de las investigaciones o diseños que se plantean tienen restricciones de recursos y este método es una opción bastante confiable.
+
+
+\end{frame}
+
+
+
+%-----------------------------------------------------------
 
 \begin{frame}
 \frametitle{Referencias}

@@ -27,8 +27,6 @@ year = 2019]
 % **** --------------------------------------------------------------------------------
 
 
-
-
 % //// --------------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------
 % Espacio reservado para colocar las definiciones especiales por parte del autor
@@ -137,7 +135,7 @@ de grado.tex}) and can be used as a guideline just replacing its contents. It is
 % Título de la primera sección
 % **** --------------------------------------------------------------------------------
 \section{Introducción}
-~\\Para entender y abordar el tema correspondiente a los diseños factoriales fraccionados, debemos tener claro el concepto y funcionamiento de un diseño factorial en general, por ello, se dará una breve introducción sobre este tipo de diseño, ya que este es la base de nuestro tema en cuestión.
+Para entender y abordar el tema correspondiente a los diseños factoriales fraccionados, debemos tener claro el concepto y funcionamiento de un diseño factorial en general, por ello, se dará una breve introducción sobre este tipo de diseño, ya que este es la base de nuestro tema en cuestión.
 
 ~\\Los diseños factoriales surgen ante la necesidad de estudiar conjuntamente varios factores obedeciendo a la posibilidad de que el efecto de un factor cambie según los niveles de otros factores, esto es, que los factores interactúen. Estos diseños también se usan cuando se quiere
 optimizar la respuesta o variable dependiente, es decir, se quiere encontrar la combinación de niveles de los factores que producen un valor óptimo de la variable dependiente.
@@ -145,11 +143,11 @@ optimizar la respuesta o variable dependiente, es decir, se quiere encontrar la 
 
 \section{Antecedentes}
 
-Para estudiar un poco como se han trabajado los diseños factoriales fraccionados vamos a estudiar tres articulos, el primero \textbf{Using fractional factorial designs with mixture constraints to improve nutritional value and sensory properties of processed food} escrito por \textbf{Andreas Rytz, Mireille Moser, Mélissa Lepage, Cassandra Mokdad, Marie Perrot, Nicolas Antille,Nicolas Pineau} en donden este trabajo propone un enfoque simple, genérico y eficiente para combinar los factores de proceso y mezcla en el mismo diseño al manejar fácilmente cualquier restricción de mezcla en el marco de los diseños factoriales fraccionarios, teniendo en cuenta que los productos alimenticios industriales se pueden considerar como mezclas procesadas de ingredientes para los cuales los parámetros del proceso y los parámetros de la mezcla se deben investigar simultáneamente al tratar de mejorar sus propiedades nutricionales y sensoriales; el segundo artículo \textbf{The use of nonregular fractional factorial designs in combination toxicity studies} escrito por \textbf{Frederick K.H. Phoaa, Hongquan Xua, Weng Kee Wongb} el cual muestra cuando hay interés en estudiar $n$ productos químicos que utilizan $x$ niveles de dosis cada uno, los diseños factoriales que requieren $ x^{n} $ grupos de tratamiento se han presentado como uno de los valiosos enfoques estadísticos para la evaluación de peligros de mezclas químicas, y permitir aplicaciones ejemplares y comparaciones de costo-eficiencia de diseños factoriales completos y diseños factoriales fraccionados regulares en estudios de toxicidad y por por ultimo \textbf{Métodos y técnicas avanzadas de análisis de datos en ciencias del comportamiento} escrito por \textbf{Jaume Arnau Gras}, el artículo expone un estudio realizado sobre el pintado de un producto, para determinar en qué niveles de los factores se minimiza el tiempo de espera para el secado total. Se realizó un experimento factorial completo de 3 factores con 2 niveles cada uno, los factores que se utilizaron fueron tipo de pintura-esmalte a utilizar (estándar o de secado rápido), el método de secado (con o sin agua fría) y la cantidad de capas que se aplican (1 o 2 capas). Se realizaron 3 réplicas para quitar ambigüedades en las respuestas.
+Para estudiar un poco como se han trabajado los diseños factoriales fraccionados se estudiaron tres artículos, el primero \textbf{Using fractional factorial designs with mixture constraints to improve nutritional value and sensory properties of processed food} escrito por \textbf{\citeasnoun{RYTZ201771}} donde se propone un enfoque simple, genérico y eficiente para combinar los factores de proceso y mezcla en el mismo diseño al manejar fácilmente cualquier restricción de mezcla en el marco de los diseños factoriales fraccionarios, teniendo en cuenta que los productos alimenticios industriales se pueden considerar como mezclas procesadas de ingredientes para los cuales los parámetros del proceso y los parámetros de la mezcla se deben investigar simultáneamente al tratar de mejorar sus propiedades nutricionales y sensoriales; el segundo artículo \textbf{The use of nonregular fractional factorial designs in combination toxicity studies} escrito por \textbf{\citeasnoun{PHOA20092183}} el cual muestra cuando hay interés en estudiar $n$ productos químicos que utilizan $x$ niveles de dosis cada uno, los diseños factoriales que requieren $ x^{n} $ grupos de tratamiento se han presentado como uno de los valiosos enfoques estadísticos para la evaluación de peligros de mezclas químicas, y permitir aplicaciones ejemplares y comparaciones de costo-eficiencia de diseños factoriales completos y diseños factoriales fraccionados regulares en estudios de toxicidad y por último, \textbf{\citeasnoun{garza2013aplicacion}} en su artículo \textbf{Aplicaci{\'o}n de dise{\~n}o de experimentos para el an{\'a}lisis de secado de un producto} exponen un estudio realizado sobre el pintado de un producto, para determinar en qué niveles de los factores se minimiza el tiempo de espera para el secado total. Se realizó un experimento factorial completo de 3 factores con 2 niveles cada uno, los factores que se utilizaron fueron tipo de pintura-esmalte a utilizar (estándar o de secado rápido), el método de secado (con o sin agua fría) y la cantidad de capas que se aplican (1 o 2 capas). Se realizaron 3 réplicas para quitar ambigüedades en las respuestas.
 
 
 \section{Diseños factoriales}
-~\\Un diseño factorial es un tipo de experimento cuyo diseño permite estudiar los efectos que varios factores pueden tener en una respuesta. Al realizar un experimento, variar los niveles de todos los factores al mismo tiempo en lugar de uno a la vez, permite estudiar las interacciones entre los factores.
+Un diseño factorial es un tipo de experimento cuyo diseño permite estudiar los efectos que varios factores pueden tener en una respuesta. Al realizar un experimento, variar los niveles de todos los factores al mismo tiempo en lugar de uno a la vez, permite estudiar las interacciones entre los factores.
 
 ~\\Los diseños factoriales producen experimentos más eficientes, pues cada observación proporciona información sobre todos los factores, y es factible ver
 las respuestas de un factor en diferentes niveles de otro factor en el mismo experimento. La respuesta a cualquier factor observado en diferentes condiciones indica si los factores actúan en las unidades experimentales de manera independiente. La interacción entre factores ocurre cuando su actuación no es independiente.
@@ -166,7 +164,7 @@ $y_{ijk}=\mu+\tau_i+\beta_j+(\tau\beta)_{ij}+\varepsilon_{ijk} \;\;\; \left \{\b
 \begin{table}[htbp]
   \centering
   \caption{Diseño $2^2$ para ilustrar estimación de efectos}
-  \resizebox{0.23\textwidth}{!}{
+  \resizebox{0.25\textwidth}{!}{
     \begin{tabular}{|c|c|c|}
 \cline{2-3}    \multicolumn{1}{c|}{} & \multicolumn{2}{c|}{\textbf{Factor A}} \\
     \hline
@@ -192,7 +190,7 @@ $$AB=\frac{(d-c)-(b-a)}{2}$$
 ~\\Todas las hipótesis anteriores se pueden probar realizando el análisis de varianza respectivo.
 
 \section{Diseños factoriales $2^k$}
-~\\Existen varios casos especiales del diseño factorial general, los cuales son muy importantes debido a su uso generalizado en el trabajo de investigación. El más importante de estos casos especiales es el diseño de k factores, donde cada factor cuenta con sólo dos niveles. Estos niveles pueden ser tanto cuantitativos como cualitativos. Una réplica completa de este diseño requiere $2 x 2 x\cdots x 2 =2^k$ observaciones y se le llama diseño factorial $2^k$.
+Existen varios casos especiales del diseño factorial general, los cuales son muy importantes debido a su uso generalizado en el trabajo de investigación. El más importante de estos casos especiales es el diseño de k factores, donde cada factor cuenta con sólo dos niveles. Estos niveles pueden ser tanto cuantitativos como cualitativos. Una réplica completa de este diseño requiere $2 x 2 x\cdots x 2 =2^k$ observaciones y se le llama diseño factorial $2^k$.
 ~\\El diseño $2^k$ es de particular utilidad en las etapas iniciales del trabajo experimental, cuando probablemente se estén investigando muchos factores. Este diseño proporciona el menor número de corridas con las que pueden estudiarse k factores en un diseño factorial completo.
 ~\\El modelo estadístico para un diseño $2^k$ incluiría k efectos principales, $\binom{k}{2}$ interacciones de dos factores, $\binom{k}{3}$ interacciones de tres factores,..., y una interacción de k factores. Es decir, para un diseño $2^k$ el modelo completo contendría $2^k-1$ efectos.
 ~\\El enfoque general para el análisis estadístico del diseño $2^k$ se resume en los siguientes pasos:
@@ -210,7 +208,7 @@ $$AB=\frac{(d-c)-(b-a)}{2}$$
 \begin{table}[H]
   \centering
   \caption{Tabla estándar con interacciones de diseño $2^3$}
-  \resizebox{0.45\textwidth}{!}{
+  \resizebox{0.55\textwidth}{!}{
     \begin{tabular}{cccccccc}
     \hline
     \textbf{A} & \textbf{B} & \textbf{C} & \textbf{AB} & \textbf{AC} & \textbf{BC} & \textbf{ABC} & \textbf{Respuesta y} \\
@@ -236,12 +234,12 @@ $$Contraste_{AB\cdots K}=(a\pm 1)(b\pm 1)\cdots(k\pm 1)$$
 $$AB\cdots K=\frac{2}{n2^k}(Contraste_{AB\cdots K})$$
 ~\\y
 $$SS_{AB\cdots K}=\frac{1}{n2^k}(Contraste_{AB\cdots K})^2$$
-
+\pagebreak
 ~\\Entonces el análisis de varianza de un diseño $2^k$ es
 \begin{table}[H]
   \centering
   \caption{Análisis de varianza diseño $2^k$}
-  \resizebox{0.5\textwidth}{!}{
+  \resizebox{0.55\textwidth}{!}{
     \begin{tabular}{ccc}
     \hline
     \textbf{Fuente de variación} & \textbf{Suma de cuadrados} & \textbf{Grados de libertad} \\
@@ -271,7 +269,7 @@ $$SS_{AB\cdots K}=\frac{1}{n2^k}(Contraste_{AB\cdots K})^2$$
 $$y=\beta_0+\beta_1x_1+\beta_2x_2$$
 ~\\donde $x_1$ y $x_2$ son las variables codificadas que representa el nivel alto +1 o el nivel bajo -1 de cada factor y las $\beta$ son los coeficientes de refresión, donde la estimaciones de estos coeficientes son la mitad de las estimaciones de los efectos de los factores correspondientes. 
 \section{Diseños factoriales $2^k$ con una sola replica}
-~\\Debido a que por lo general los recursos son limitados, el número de réplicas que el experimentador puede emplear quizás esté restringido. Con frecuencia, los recursos disponibles permiten hacer únicamente una sola réplica del diseño.
+Debido a que por lo general los recursos son limitados, el número de réplicas que el experimentador puede emplear quizás esté restringido. Con frecuencia, los recursos disponibles permiten hacer únicamente una sola réplica del diseño.
 ~\\Un riesgo cuando se realiza un experimento que tiene una sola corrida para combinación de prueba es que el modelo puede ajustarse al ruido. Es decir, si la respuesta $y$ es sumamente variable, pueden resultar conclusiones engañosas del experimento. Ahora bien, si hay menos variabilidad en la respuesta, la posibilidad de una conclusión errónea será más reducida. Otra forma de asegurarse de que se obtienen estimaciones confiables de los efectos es incrementando la distancia entre los niveles bajo (-) y alto (+) del factor.
 ~\\Una sola réplica del diseño $2^k$ se denomina diseño factorial no replicado. Con una sola réplica, no se cuenta con ninguna estimación interna del error. Una forma d abordar este análisis consiste en suponer que algunas interacciones de orden superior son insignificantes y combinar sus cuadrados medios para estimar el error para lograr obtener la ANOVA.
 
@@ -279,14 +277,13 @@ $$y=\beta_0+\beta_1x_1+\beta_2x_2$$
 
 ~\\Posteriormente en la sección de los ejemplos se mostrará como es el análisis para este tipo de diseños.
 \section{Diseños factoriales fraccionados}
-
-~\\En un diseño factorial conforme el número de factores del experimento crece, el número de casillas o condiciones experimentales (y por lo tanto el número de lecturas o pruebas necesarias), crece exponencialmente, también crece el número de efectos a evaluar (interacciones principalmente) y el número de efectos y casillas varía con el número de factores en una relación como se muestra en la tabla siguiente para un experimento factorial $2^k$.
+En un diseño factorial conforme el número de factores del experimento crece, el número de casillas o condiciones experimentales (y por lo tanto el número de lecturas o pruebas necesarias), crece exponencialmente, también crece el número de efectos a evaluar (interacciones principalmente) y el número de efectos y casillas varía con el número de factores en una relación como se muestra en la tabla siguiente para un experimento factorial $2^k$.
 
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[htbp]
   \centering
   \caption{Relación efectos y casillas con respecto al número de factores}
-  \resizebox{0.7\textwidth}{!}{
+  \resizebox{0.8\textwidth}{!}{
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
     \hline
     \multicolumn{1}{|c|}{\multirow{2}[4]{*}{\textbf{No. De\newline{} factores}}} & \multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{No. De\newline{} casillas}}} & \multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{Efectos \newline{} principales}}} & \multicolumn{7}{c|}{\textbf{Interacciones entre factores }} \\
@@ -341,14 +338,14 @@ es necesario el correr una replicación completa de todo el experimento cuando el
 ~\\El objetivo del diseño factorial fraccionado (replicación fraccionada) es darle respuesta a estos interrogantes.
 
 \subsection{Fracción un medio de un diseño $2^k$}
-~\\En este informe nos enfocaremos en este tipo de diseño, donde se utiliza la mitad de las corridas del diseño completo $2^k$, ya que este es el diseño más importante y más utilizado en la práctica.
+En este informe nos enfocaremos en este tipo de diseño, donde se utiliza la mitad de las corridas del diseño completo $2^k$, ya que este es el diseño más importante y más utilizado en la práctica.
 ~\\Para explicar más fácil este método nos centraremos en un ejemplo en la que tres factores, cada uno con dos niveles, son de interés. Suponiendo que los experimentadores no están en posición de correr las $2^3=8$ combinaciones de tratamientos, la lógica sugeriría disminuir las corridas. Si se pueden llevar cuatro corridas, esto sugiere una fracción un medio del diseño $2^3$. Puesto que el diseño contiene $2^{3-1}=4$ combinaciones de tratamientos, es común llamar diseño $2^{3-1}$ a una fracción un medio del diseño $2^3$.
 ~\\Supongamos que se seleccionan las cuatro combinaciones de tratamientos a,b,c y abc como la fracción un medio con la que se trabajará. En la siguiente tabla se muestra la agrupación de signos positivos y negativos del diseño $2^3$ la cuál se utilizará para explicar el proceso.
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[htbp]
   \centering
   \caption{Agrupación signos positivos y negativos diseño $2^3$}
-  \resizebox{0.5\textwidth}{!}{
+  \resizebox{0.58\textwidth}{!}{
     \begin{tabular}{ccccccccc}
     \hline
     \multicolumn{1}{p{7.285em}}{Combinación de } & \multicolumn{8}{c}{Efecto factorial} \\
@@ -387,7 +384,7 @@ $$I=ABC$$
 ~\\Por lo tanto $l_{A}=l_{BC}$,$l_{B}=l_{AC}$ y $l_{C}=l_{AB}$; por consiguiente, es imposible diferenciar entre A y BC, entre B y AC y entre C y AB. De hecho, cuando se estiman A, B y C, se están estimando en realidad $A+BC$, $B+AC$ y $C+AB$. A dos o más efectos que tienen esta propiedad se les llama alias. En este ejemplo, A y BC son alias, al igual que B y AC y C y AB. Esto se indica con la notación $L_{A}\rightarrow \; A+BC$, $L_{B}\rightarrow \; B+AC$ y $L_{C}\rightarrow C+AB$
 
 \section{Ejemplos}
-~\\Una empresa que fabrica juguetes tiene 3 estaciones de ensamble (A,B,C) y cada estación funciona en dos velocidades distintas (Alta y Baja), se desea conocer el efecto que tienen en conjunto las diferentes velocidades sobre la cantidad de juguetes ensamblados en un día. Los datos se muestran en la siguiente tabla
+Una empresa que fabrica juguetes tiene 3 estaciones de ensamble (A,B,C) y cada estación funciona en dos velocidades distintas (Alta y Baja), se desea conocer el efecto que tienen en conjunto las diferentes velocidades sobre la cantidad de juguetes ensamblados en un día. Los datos se muestran en la siguiente tabla
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[htbp]
   \centering
@@ -411,10 +408,9 @@ $$I=ABC$$
 \end{table}%
 
 \subsection{Diseño factorial completo}
-~\\Según los datos de la tabla, se tiene que:
+Según los datos de la tabla, se tiene que:
 \begin{center}
-~\\$(1)=9 \;\;\; c=16 \;\;\; b=34 \;\;\; bc=16$
-~\\$ a=15 \;\;\; ac=9 \;\;\; ab=10 \;\;\; abc=30$
+~\\$(1)=9 \;\;\; c=16 \;\;\; b=34 \;\;\; bc=16 \;\;\; a=15 \;\;\; ac=9 \;\;\; ab=10 \;\;\; abc=30$
 \end{center}
 
 ~\\Y los efectos serán
@@ -445,7 +441,7 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 \begin{table}[H]
   \centering
   \caption{Análisis de varianza factorial completo}
-  \resizebox{0.75\textwidth}{!}{
+  \resizebox{0.83\textwidth}{!}{
     \begin{tabular}{cccccc}
     \hline
     \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
@@ -466,14 +462,14 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 \end{table}%
 ~\\Podemos ver que la ANOVA para el diseño completo dio como resultado que la interacción entre los 3 factores es significativa, esto significa que en conjunto las 3 maquinas tienen un efecto significativo sobre la cantidad de juguetes fabricados.
 \subsection{Diseño fraccionado un medio}
-~\\Como se mostró en la tabla 5, se seleccionan los factores e interacciones tales que el signo de la interacción ABC es positivo. En este caso, la fracción un medio del diseño $2^3$ está compuesto por los factores A, B, C y la interacción ABC.
+Como se mostró en la tabla 5, se seleccionan los factores e interacciones tales que el signo de la interacción ABC es positivo. En este caso, la fracción un medio del diseño $2^3$ está compuesto por los factores A, B, C y la interacción ABC.
 ~\\Como se utilizó la relación de definición de diseño $I=ABC$, se deducen los alias $A=BC$, $B=AC$ y $C=AB$ De esta forma si alguno de los Alias A,B,C es significativo podemos inferir que la interacción ABC también lo es.
 
 ~\\La ANOVA de la fracción un medio del diseño $2^k$ es
 \begin{table}[H]
   \centering
   \caption{Análisis de varianza factorial fraccionado}
-  \resizebox{0.78\textwidth}{!}{
+  \resizebox{0.85\textwidth}{!}{
     \begin{tabular}{cccccc}
     \hline
     \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
@@ -496,7 +492,7 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 \begin{table}[htbp]
   \centering
   \caption{Matriz de diseño ejemplo con una sola réplica}
-  \resizebox{0.5\textwidth}{!}{    
+  \resizebox{0.55\textwidth}{!}{    
     \begin{tabular}{ccccccc}
     \hline
     \textbf{Número de} & \multicolumn{4}{c}{\textbf{Factor}} & \textbf{Etiqueta de} & \textbf{Índice de } \\
@@ -526,10 +522,11 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 ~\\El análisis de estos datos se inicia construyendo la gráfica de probabilidad normal de la estimaciones de los efectos.
 \begin{figure}[h!]
   \centering
-  \includegraphics[scale=0.4]{FigurasUV/DEJ.pdf}
+  \includegraphics[scale=0.45]{FigurasUV/DEJ.pdf}
   \caption{Gráfica QQplot de los efectos}
 \end{figure}
-~\\Podemos observar que los efectos significativos son los efectos principales A, C y D y las interacciones AC y AD. Puesto que B(presión) no es significativo y todas las interacciones en las que interviene B son insignificante, B puede descartarse del experimento, de tal modo que ahora si se puede tener una estimación del error ya que quedan grados de libertad para dicha estimación.
+~\\Podemos observar en la gráfica 1 que los efectos significativos son los efectos principales A, C y D y las interacciones AC y AD. Puesto que B(presión) no es significativo y todas las interacciones en las que interviene B son insignificante, B puede descartarse del experimento, de tal modo que ahora si se puede tener una estimación del error ya que quedan grados de libertad para dicha estimación.
+\pagebreak
 ~\\La ANOVA da como resultado
 \begin{table}[H]
   \centering
@@ -557,7 +554,7 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 ~\\Dado que los únicos efectos significativos son $A=21.625$,$C=9.875$,$D=14.625$,$AC=-18.125$ y $AD=16.625$, el modelo estimado será
 $$\hat{y}=70.06+\left(\frac{21.625}{2}\right)x_1+\left(\frac{9.875}{2}\right)x_3+\left(\frac{14.625}{2}\right)x_4-\left(\frac{18.125}{2}\right)x_1x_3+\left(\frac{16.625}{2}\right)x_1x_4$$
 \subsection{Ejemplo diseño fraccionado un medio con una sola réplica}
-~\\Se retoma el ejemplo anterior y se propone una fracción un medio del diseño $2^4$. Se usará el diseño $2^{4-1}$ con $I=ABCD$. Para construir el diseño, primero se apunta el diseño básico, el cual es un diseño $2^3$. Para encontrar los niveles del cuarto factor, se resuelve $I=ABCD$ para $D$, o $D=ABC$. Por lo tanto, el nivel de D de cada corrida es el producto de los signos positivos y negativos de las columnas A,B y C. El procso se ilustra en la siguiente tabla
+~\\Se retoma el ejemplo anterior y se propone una fracción un medio del diseño $2^4$. Se usará el diseño $2^{4-1}$ con $I=ABCD$. Para construir el diseño, primero se apunta el diseño básico, el cual es un diseño $2^3$. Para encontrar los niveles del cuarto factor, se resuelve $I=ABCD$ para $D$, o $D=ABC$. Por lo tanto, el nivel de D de cada corrida es el producto de los signos positivos y negativos de las columnas A,B y C. El proceso se ilustra en la siguiente tabla
 % Table generated by Excel2LaTeX from sheet 'Hoja1'
 \begin{table}[htbp]
   \centering
@@ -590,7 +587,7 @@ $$L_{AB}=\frac{1}{4}(45-100-45+65+75-60-80+96)=-1 \rightarrow \;\;\; AB+CD $$
 \begin{table}[H]
   \centering
   \caption{Estimaciones de los efectos y los alias}
-  \resizebox{0.3\textwidth}{!}{
+  \resizebox{0.4\textwidth}{!}{
     \begin{tabular}{cc}
     \hline
     \textbf{Estimación} & \textbf{Estructura de los alias} \\
@@ -614,13 +611,13 @@ $$\hat{y}=\hat{\beta_0}+\hat{\beta_1}x_1+\hat{\beta_3}x_3+\hat{\beta_4}x_4+\hat{
 $$\hat{y}=70.75+\left(\frac{19}{2}\right)x_1+\left(\frac{14}{2}\right)x_3+\left(\frac{16.5}{2}\right)x_4+\left(\frac{-18.5}{2}\right)x_1x_3+\left(\frac{19}{2}\right)x_1x_4$$
 
 \section{Conclusión}
-~\\La principal conclusión que obtenemos es que los diseños factoriales fraccionados son una alternativa muy útil cuando se tienen muchos factores y los recursos para llevar a cabo el experimento son limitados. Se pudo observar que en los dos ejemplos realizados, centrándonos en el primero, vimos que se llegó a la misma conclusión en la ANOVA con el factorial completo y el factorial fraccionado, de que la interacción de los 3 factores A,B y C es significativa. Con respecto al segundo ejemplo, se pudo observar que los resultados del modelo ajustado con los $\beta_i$ estimados también son muy parecidos en el factorial completo y el fraccionado. Esto nos lleva a concluir que los diseños factoriales fraccionados son muy importantes, ya que con la mitad o menos de las corridas se llegan a resultados muy semejantes a si se hiciera completo, esto es muy útil ya que en la practica la mayoría de las investigaciones o diseños que se plantean tienen restricciones de recursos y este método es una opción bastante confiable.
+La principal conclusión que obtenemos es que los diseños factoriales fraccionados son una alternativa muy útil cuando se tienen muchos factores y los recursos para llevar a cabo el experimento son limitados. Se pudo observar que en los dos ejemplos realizados, centrándonos en el primero, vimos que se llegó a la misma conclusión en la ANOVA con el factorial completo y el factorial fraccionado, de que la interacción de los 3 factores A,B y C es significativa. Con respecto al segundo ejemplo, se pudo observar que los resultados del modelo ajustado con los $\beta_i$ estimados también son muy parecidos en el factorial completo y el fraccionado; esto nos lleva a concluir que los diseños factoriales fraccionados son muy importantes, ya que con la mitad o menos de las corridas se llegan a resultados muy semejantes a si se hiciera completo, esto es muy útil ya que en la practica la mayoría de las investigaciones o diseños que se plantean tienen restricciones de recursos y este método es una opción bastante confiable.
 
 
 
-\nocite{Diseño}
-\nocite{Diseño2}
-\nocite{Diseño3}
+\nocite{Diseno}
+\nocite{Diseno2}
+\nocite{Diseno3}
 \nocite{Diapos}
 \nocite{Diapos1}
 \nocite{R}

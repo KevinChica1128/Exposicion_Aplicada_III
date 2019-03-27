@@ -17,11 +17,11 @@ Efectos <- data.frame(FA,FB,FC,Respuesta)
 plot.design(Efectos, fun="mean", main=" Gráfica de efectos principales", ylab= "Respuesta", xlab="Factor")
 
 #MODELO FACTORIAL
-mod4<-lm(Respuesta~FA+FB+FC+FA:FB+FA:FC+FB:FC+FA:FB:FC, data=datos4)
-anova(mod4)
+mod<-lm(Respuesta~FA+FB+FC+FA:FB+FA:FC+FB:FC+FA:FB:FC, data=datos4)
+anova(mod)
 
 #fraccionado
-#a mano seria tomar las que muestran signo positivo en la interaccion de todas las velocidades
+#A mano seria tomar las que muestran signo positivo en la interaccion de todas las velocidades
 #antes de hacer el experimento
 library("AlgDesign")
 levels.design = c(2,2,2) 
@@ -47,12 +47,12 @@ for (i in 1:length(fr)) {
   }
   nueva=datos4[-j,]
 }
-colnames(nueva)=c("H","J","K","O")
+colnames(nueva)=c("A","B","C","O")
 
 
 
 #MODELO FACTORIAL
-mod6<-lm(O~H+J+K, data=nueva)
+mod6<-lm(O~A+B+C, data=nueva)
 anova(mod6)
 
 #Ejemplo2
@@ -66,17 +66,14 @@ filtracion<-c(45,71,48,65,68,60,80,65,43,100,45,104,75,86,70,96)
 datos2=data.frame(A,B,C,D,filtracion)
 str(datos2)
 head(datos2)
-mod3<-lm(filtracion~A+C+D+A:C+A:D+C:D+A:C:D, data=datos2)
-anova(mod3)
-
 
 library(FrF2)
 Tabla <- FrF2(nruns = 16, 
               nfactors = 4, 
-              factor.names = list(A=c("0","1"), 
-                                  B=c("0","1"), 
-                                  C=c("0","1"),
-                                  D=c("0","1")),
+              factor.names = list(A=c("-","+"), 
+                                  B=c("-","+"), 
+                                  C=c("-","+"),
+                                  D=c("-","+")),
               replications = 1, randomize = F)
 Tabla <- add.response(design = Tabla, response = filtracion)
 Tabla
@@ -91,6 +88,10 @@ qqline(Efectos0)
 #Gráfico R
 x11()
 DanielPlot(Tabla)
+
+mod3<-lm(filtracion~A+C+D+A:C+A:D+C:D+A:C:D, data=datos2)
+anova(mod3)
+summary(mod3)
 
 #Gráfico efectos principales
 MEPlot(Tabla, lwd = 2)
@@ -147,3 +148,7 @@ x11()
 qqnorm(Efectos)
 qqline(Efectos)
 text(c(0.7,-0.3,-0.07,0.42,-0.68,-1.28,1.27),Efectos,c("A","B","C","D","AB","AC","AD"))
+
+mod3<-lm(filtracion~A+C+D+A:C+A:D+C:D+A:C:D, data=nueva1)
+anova(mod3)
+summary(mod3)

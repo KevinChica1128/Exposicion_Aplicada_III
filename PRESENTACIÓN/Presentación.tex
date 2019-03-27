@@ -155,11 +155,6 @@ $$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{i
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo de Diseño factorial}
-
-\end{frame}
-
-\begin{frame}
 \frametitle{Diseño Factorial $2^{k}$}
 ~\\Existen varios casos especiales del diseño factorial general, los cuales son muy importantes debido a su uso generalizado en el trabajo de investigación. El más importante de estos casos especiales es el diseño de k factores, donde cada factor cuenta con sólo dos niveles. Estos niveles pueden ser tanto cuantitativos como cualitativos. Una réplica completa de este diseño requiere $2 x 2 x\cdots x 2 =2^k$ observaciones y se le llama diseño factorial $2^k$.
 \end{frame}
@@ -205,7 +200,7 @@ $$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{i
 \begin{table}[H]
   \centering
   \caption{Matriz de Diseño}
-  \resizebox{0.5\textwidth}{!}{
+  \resizebox{0.7\textwidth}{!}{
     \begin{tabular}{cccccccc}
     \hline
     \textbf{A} & \textbf{B} & \textbf{C} & \textbf{AB} & \textbf{AC} & \textbf{BC} & \textbf{ABC} & \textbf{Respuesta y} \\
@@ -232,11 +227,10 @@ $$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{i
 
 \begin{frame}
 \frametitle{Diseño Factorial $ 2^{k} $}
-~\\Ahora, teniendo en cuenta la notación anterior y que n es el número de réplicas hechas con la combinación de los tratamientos.Para estimar un efecto o calcular la suma de cuadrados de un efecto, primero debe determinarse el contraste asociado con ese efecto. En general, el contraste del efecto $AB\cdots K$ se determina expandiendo el miembro derecho de
+~\\Para estimar un efecto o calcular la suma de cuadrados de un efecto, primero debe determinarse el contraste asociado con ese efecto. En general, el contraste del efecto $AB\cdots K$ se determina expandiendo el miembro derecho de
 $$Contraste_{AB\cdots K}=(a\pm 1)(b\pm 1)\cdots(k\pm 1)$$
 ~\\Una vez se han calculado los contrastes de los efectos, pueden estimarse los efectos y calcular las sumas de cuadrados de acuerdo con
 $$AB\cdots K=\frac{2}{n2^k}(Contraste_{AB\cdots K})$$
-~\\y
 $$SS_{AB\cdots K}=\frac{1}{n2^k}(Contraste_{AB\cdots K})^2$$
 
 \end{frame}
@@ -246,8 +240,8 @@ $$SS_{AB\cdots K}=\frac{1}{n2^k}(Contraste_{AB\cdots K})^2$$
 ~\\Entonces el análisis de varianza de un diseño $2^k$ es
 \begin{table}[H]
   \centering
-  \caption{}
-  \resizebox{0.58\textwidth}{!}{
+  \caption{Análisis de varianza diseño $2^k$}
+  \resizebox{0.6\textwidth}{!}{
     \begin{tabular}{ccc}
     \hline
     \textbf{Fuente de variación} & \textbf{Suma de cuadrados} & \textbf{Grados de libertad} \\
@@ -286,7 +280,7 @@ $$SS_{AB\cdots K}=\frac{1}{n2^k}(Contraste_{AB\cdots K})^2$$
 \begin{table}[htbp]
   \centering
   \caption{No de factores del experimento}
-  \resizebox{0.7\textwidth}{!}{
+  \resizebox{0.8\textwidth}{!}{
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
     \hline
     \multicolumn{1}{|c|}{\multirow{2}[4]{*}{\textbf{No. De \newline{} factores}}} & \multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{No. De \newline{} casillas}}} & \multicolumn{1}{c|}{\multirow{2}[4]{*}{\textbf{Efectos \newline{} principales}}} & \multicolumn{7}{c|}{\textbf{Interacciones entre factores }} \\
@@ -479,10 +473,10 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 \begin{table}[H]
   \centering
   \caption{Análisis de varianza factorial completo}
-  \resizebox{0.85\textwidth}{!}{
+  \resizebox{0.92\textwidth}{!}{
     \begin{tabular}{cccccc}
     \hline
-    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
+    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{$Pr>F$}  \\
     \hline
    \textbf{Factor A} & 1 & 7.56 & 7.56 & 0.87 & 0.3781\\
    \textbf{Factor B} & 1 & 105.06 & 105.06 & 12.09 & 0.0083* \\  
@@ -508,10 +502,10 @@ En este caso, la fracción un medio del diseño $2^3$ está compuesto por los fa
 \begin{table}[H]
   \centering
   \caption{Análisis de varianza factorial fraccionado}
-  \resizebox{0.85\textwidth}{!}{
+  \resizebox{0.92\textwidth}{!}{
     \begin{tabular}{cccccc}
     \hline
-    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
+    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{$Pr>F$}  \\
     \hline
    \textbf{A} & 1 & 3.125 & 3.125 & 0.2688 & 0.6315\\
    \textbf{B} & 1 & 136.125 & 136.125 & 11.7097 & 0.02673* \\  
@@ -582,7 +576,7 @@ En este caso, la fracción un medio del diseño $2^3$ está compuesto por los fa
   \resizebox{0.95\textwidth}{!}{
     \begin{tabular}{cccccc}
     \hline
-    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{Pr>F}  \\
+    \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{$Pr>F$}  \\
     \hline
    \textbf{A} & 1 & 1870.56 & 1870.56& 83.3677& 1.667e-05 ***\\
    \textbf{C} & 1 & 390.06 & 390.06& 17.3844& 0.0031244 **  \\  
@@ -599,6 +593,16 @@ En este caso, la fracción un medio del diseño $2^3$ está compuesto por los fa
   \label{tab:addlabel}%
 \end{table}%       
 \end{frame}
+
+\begin{frame}
+\frametitle{Ejemplo de diseño factorial completo con una sola replica}
+~\\Dado que los únicos efectos significativos son $A=21.625$,$C=9.875$,
+
+$D=14.625$,$AC=-18.125$ y $AD=16.625$, el modelo estimado será
+$$\hat{y}=70.06+\left(\frac{21.625}{2}\right)x_1+\left(\frac{9.875}{2}\right)x_3+\left(\frac{14.625}{2}\right)x_4$$
+$$-\left(\frac{18.125}{2}\right)x_1x_3+\left(\frac{16.625}{2}\right)x_1x_4$$
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
@@ -640,7 +644,7 @@ En este caso, la fracción un medio del diseño $2^3$ está compuesto por los fa
 
 \begin{frame}
 \frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
-~\\En la tabla \textbf{tal} se muestran las estimaciones de los efectos obtenidas de este diseño. Para mostrar los cálculos, la combinación lineal de las observaciones asociadas con el efecto de A es
+~\\En la tabla siguiente se muestran las estimaciones de los efectos obtenidas de este diseño. Para mostrar los cálculos, la combinación lineal de las observaciones asociadas con el efecto de A es
 $$L_A=\frac{1}{4}(-45+100-45+65-75+60-80+96)=19 \rightarrow \;\;\; A+BCD $$
 ~\\Mientras que para el efecto AB se obtendría
 $$L_{AB}=\frac{1}{4}(45-100-45+65+75-60-80+96)=-1 \rightarrow \;\;\; AB+CD $$
@@ -686,10 +690,10 @@ $$\hat{y}=70.75+\left(\frac{19}{2}\right)x_1+\left(\frac{14}{2}\right)x_3+\left(
 \end{frame}
 
 \begin{frame}
-\frametitle{Ejemplo diseño fraccionado un medio con una sola replica}
+\frametitle{Conclusión}
 ~\\La principal conclusión que obtenemos es que los diseños factoriales fraccionados son una alternativa muy útil cuando se tienen muchos factores y los recursos para llevar a cabo el experimento son limitados.
 
-~\\ viendo los experimentos esto nos lleva a concluir que los diseños factoriales fraccionados son muy importantes, ya que con la mitad o menos de las corridas se llegan a resultados muy semejantes a si se hiciera completo, esto es muy útil ya que en la practica la mayoría de las investigaciones o diseños que se plantean tienen restricciones de recursos y este método es una opción bastante confiable.
+~\\ Observando los dos ejemplos realizados podemos concluir que los diseños factoriales fraccionados son muy importantes, ya que con la mitad o menos de las corridas se llegan a resultados muy semejantes a si se hiciera completo, esto es muy útil ya que en la practica la mayoría de las investigaciones o diseños que se plantean tienen restricciones de recursos y este método es una opción bastante confiable.
 
 
 \end{frame}

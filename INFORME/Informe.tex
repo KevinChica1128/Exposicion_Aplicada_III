@@ -268,7 +268,7 @@ $$SS_{AB\cdots K}=\frac{1}{n2^k}(Contraste_{AB\cdots K})^2$$
 ~\\En este tipo de diseño es sencillo expresar los resultados del experimento en términos de un modelo de regresión. El modelo de regresión es
 $$y=\beta_0+\beta_1x_1+\beta_2x_2$$
 ~\\donde $x_1$ y $x_2$ son las variables codificadas que representa el nivel alto +1 o el nivel bajo -1 de cada factor y las $\beta$ son los coeficientes de refresión, donde la estimaciones de estos coeficientes son la mitad de las estimaciones de los efectos de los factores correspondientes. 
-\section{Diseños factoriales $2^k$ con una sola replica}
+\section{Diseños factoriales $2^k$ con una sola réplica}
 Debido a que por lo general los recursos son limitados, el número de réplicas que el experimentador puede emplear quizás esté restringido. Con frecuencia, los recursos disponibles permiten hacer únicamente una sola réplica del diseño.
 ~\\Un riesgo cuando se realiza un experimento que tiene una sola corrida para combinación de prueba es que el modelo puede ajustarse al ruido. Es decir, si la respuesta $y$ es sumamente variable, pueden resultar conclusiones engañosas del experimento. Ahora bien, si hay menos variabilidad en la respuesta, la posibilidad de una conclusión errónea será más reducida. Otra forma de asegurarse de que se obtienen estimaciones confiables de los efectos es incrementando la distancia entre los niveles bajo (-) y alto (+) del factor.
 ~\\Una sola réplica del diseño $2^k$ se denomina diseño factorial no replicado. Con una sola réplica, no se cuenta con ninguna estimación interna del error. Una forma d abordar este análisis consiste en suponer que algunas interacciones de orden superior son insignificantes y combinar sus cuadrados medios para estimar el error para lograr obtener la ANOVA.
@@ -580,7 +580,7 @@ $$\hat{y}=70.06+\left(\frac{21.625}{2}\right)x_1+\left(\frac{9.875}{2}\right)x_3
 \end{table}%
 
 ~\\Utilizando la relación de definición del diseño $I=ABCD$, podemos deducir que cada uno de los efectos principales es alias de una interacción de tres factores como sigue, $A=BCD$,$B=ACD$,$C=ABD$,$D=ABC$, y además, cada interacción de dos factores es alias de otra interacción de dos factores como sigue, $AB=CD$,$AC=BD$ y $BC=AD$. Los cuatro efectos principales más los 3 pares de alias de interacciones de dos factores representan los siete grados de libertad del diseño.
-~\\En la tabla \textbf{tal} se muestran las estimaciones de los efectos obtenidas de este diseño. Para mostrar los cálculos, la combinación lineal de las observaciones asociadas con el efecto de A es
+~\\En la tabla 12 se muestran las estimaciones de los efectos obtenidas de este diseño. Para mostrar los cálculos, la combinación lineal de las observaciones asociadas con el efecto de A es
 $$L_A=\frac{1}{4}(-45+100-45+65-75+60-80+96)=19 \rightarrow \;\;\; A+BCD $$
 ~\\Mientras que para el efecto AB se obtendría
 $$L_{AB}=\frac{1}{4}(45-100-45+65+75-60-80+96)=-1 \rightarrow \;\;\; AB+CD $$

@@ -52,16 +52,16 @@ colnames(nueva)=c("A","B","C","O")
 
 
 #MODELO FACTORIAL
-mod6<-lm(O~A+B+C, data=nueva)
-anova(mod6)
+mod1<-lm(O~A+B+C, data=nueva)
+anova(mod1)
 
 #Ejemplo2
 #Diseño factorial completo con una sola replica.
 #Ingresamos los datos
-A<-c(rep(c("0","1"),8))
-B<-c(rep(c("0","0","1","1"),4))
-C<-c(rep(c(rep("0",4),rep("1",4)),2))
-D<-c(rep("0",8),rep("1",8))
+A<-c(rep(c("-1","1"),8))
+B<-c(rep(c("-1","-1","1","1"),4))
+C<-c(rep(c(rep("-1",4),rep("1",4)),2))
+D<-c(rep("-1",8),rep("1",8))
 filtracion<-c(45,71,48,65,68,60,80,65,43,100,45,104,75,86,70,96)
 datos2=data.frame(A,B,C,D,filtracion)
 str(datos2)
@@ -89,9 +89,9 @@ qqline(Efectos0)
 x11()
 DanielPlot(Tabla)
 
-mod3<-lm(filtracion~A+C+D+A:C+A:D+C:D+A:C:D, data=datos2)
-anova(mod3)
-summary(mod3)
+mod2<-lm(filtracion~A+C+D+A:C+A:D+C:D+A:C:D, data=datos2)
+anova(mod2)
+
 
 #Gráfico efectos principales
 MEPlot(Tabla, lwd = 2)
@@ -149,6 +149,6 @@ qqnorm(Efectos)
 qqline(Efectos)
 text(c(0.7,-0.3,-0.07,0.42,-0.68,-1.28,1.27),Efectos,c("A","B","C","D","AB","AC","AD"))
 
-mod3<-lm(filtracion~A+C+D+A:C+A:D+C:D+A:C:D, data=nueva1)
+mod3<-lm(O~A*C, data=nueva1)
 anova(mod3)
 summary(mod3)

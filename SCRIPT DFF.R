@@ -19,6 +19,7 @@ plot.design(Efectos, fun="mean", main=" Gráfica de efectos principales", ylab= "
 #MODELO FACTORIAL
 mod<-lm(Respuesta~FA+FB+FC+FA:FB+FA:FC+FB:FC+FA:FB:FC, data=datos4)
 anova(mod)
+summary(mod)
 
 #fraccionado
 #A mano seria tomar las que muestran signo positivo en la interaccion de todas las velocidades

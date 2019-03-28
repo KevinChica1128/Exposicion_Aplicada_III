@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  27 MAR 2019 16:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.2)  27 MAR 2019 19:51
 entering extended mode
 **./Presentación.tex
 (Presentación.tex
@@ -1072,7 +1072,7 @@ Overfull \hbox (0.73419pt too wide) in paragraph at lines 134--134
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.191 \end{frame}
+l.190 \end{frame}
                   [15
 
 ] [16
@@ -1081,7 +1081,7 @@ l.191 \end{frame}
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.221 \end{frame}
+l.220 \end{frame}
                   [17
 
 ] [18
@@ -1092,9 +1092,9 @@ l.221 \end{frame}
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.270 \end{frame}
+l.269 \end{frame}
                  
-Overfull \vbox (4.23816pt too high) detected at line 270
+Overfull \vbox (4.23816pt too high) detected at line 269
  []
 
 [20
@@ -1105,7 +1105,7 @@ Overfull \vbox (4.23816pt too high) detected at line 270
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.310 \end{frame}
+l.309 \end{frame}
                   [22
 
 ] [23
@@ -1118,13 +1118,13 @@ l.310 \end{frame}
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.371 \end{frame}
+l.370 \end{frame}
                   [26
 
 ] [27
 
 ]
-Overfull \vbox (7.45627pt too high) detected at line 396
+Overfull \vbox (7.45627pt too high) detected at line 395
  []
 
 [28
@@ -1137,7 +1137,7 @@ Overfull \vbox (7.45627pt too high) detected at line 396
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.430 \end{frame}
+l.429 \end{frame}
                   [31
 
 ] [32
@@ -1148,83 +1148,89 @@ l.430 \end{frame}
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.495 \end{frame}
+l.494 \end{frame}
                   [34
 
-]pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.520 \end{frame}
-                  [35
-
-] [36
-
-]pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel
-}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.558 \end{frame}
-                  [37
-
 ]
-<imagenes/DEJ.pdf, id=263, 490.83376pt x 490.83376pt>
-File: imagenes/DEJ.pdf Graphic file (type pdf)
-<use imagenes/DEJ.pdf>
-Package pdftex.def Info: imagenes/DEJ.pdf  used on input line 568.
-(pdftex.def)             Requested size: 196.33002pt x 196.33002pt.
-
-Overfull \vbox (39.03839pt too high) detected at line 568
+Overfull \vbox (2.7247pt too high) detected at line 512
  []
 
-[38
+[35
+
+]pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.538 \end{frame}
+                  [36
+
+] [37
+
+]pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel
+}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.576 \end{frame}
+                  [38
+
+]
+<imagenes/DEJ.pdf, id=269, 490.83376pt x 490.83376pt>
+File: imagenes/DEJ.pdf Graphic file (type pdf)
+<use imagenes/DEJ.pdf>
+Package pdftex.def Info: imagenes/DEJ.pdf  used on input line 586.
+(pdftex.def)             Requested size: 196.33002pt x 196.33002pt.
+
+Overfull \vbox (39.03839pt too high) detected at line 586
+ []
+
+[39
 
  <./imagenes/DEJ.pdf>]pdfTeX warning (ext4): destination with the same identifi
 er (name{tab:addlabel}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.595 \end{frame}
-                  [39
-
-] [40
+l.613 \end{frame}
+                  [40
 
 ] [41
 
+] [42
+
 ]pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.637 \end{frame}
-                  [42
-
-] [43
+l.655 \end{frame}
+                  [43
 
 ] [44
 
+] [45
+
 ]pdfTeX warning (ext4): destination with the same identifier (name{tab:addlabel
 }) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.676 \end{frame}
-                  [45
+l.694 \end{frame}
+                  [46
 
-] [46
+] [47
 
 ]
-Overfull \hbox (21.80785pt too wide) detected at line 690
+Overfull \hbox (21.80785pt too wide) detected at line 708
 [] \OT1/cmss/m/n/12 = 70[]75 + [] \OT1/mathkerncmss/m/sl/12 x[] \OT1/cmss/m/n/1
 2 + [] \OT1/mathkerncmss/m/sl/12 x[] \OT1/cmss/m/n/12 + [] \OT1/mathkerncmss/m/
 sl/12 x[] \OT1/cmss/m/n/12 + [] \OT1/mathkerncmss/m/sl/12 x[]x[] \OT1/cmss/m/n/
 12 + [] \OT1/mathkerncmss/m/sl/12 x[]x[]
  []
 
-[47
-
-] [48
+[48
 
 ] [49
 
 ] [50
+
+] [51
 
 ]
 \tf@nav=\write6
@@ -1236,14 +1242,14 @@ sl/12 x[] \OT1/cmss/m/n/12 + [] \OT1/mathkerncmss/m/sl/12 x[]x[] \OT1/cmss/m/n/
 \tf@snm=\write8
 \openout8 = `Presentación.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 739.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 739.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 757.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 757.
  (Presentación.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 739.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 739.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 757.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 757.
 Package rerunfilecheck Info: File `Presentación.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -1252,10 +1258,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 18529 strings out of 492946
- 351524 string characters out of 3135510
- 445569 words of memory out of 3000000
- 21893 multiletter control sequences out of 15000+200000
+ 18533 strings out of 492946
+ 351561 string characters out of 3135510
+ 444569 words of memory out of 3000000
+ 21895 multiletter control sequences out of 15000+200000
  15400 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,57p,804b,639s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1271,9 +1277,9 @@ x10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi12.pfb
 ><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Pro
 gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on Presentación.pdf (50 pages, 248934 bytes).
+Output written on Presentación.pdf (51 pages, 251293 bytes).
 PDF statistics:
- 413 PDF objects out of 1000 (max. 8388607)
- 102 named destinations out of 1000 (max. 500000)
+ 420 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 

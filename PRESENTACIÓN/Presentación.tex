@@ -163,18 +163,17 @@ $$SC_{error}=SC_{total}-\frac{1}{n}\sum\limits_{i=1}^a\sum\limits_{j=1}^b y^2_{i
 \frametitle{Diseño Factorial $ 2^{k} $}
 ~\\El diseño $2^k$ es de particular utilidad en las etapas iniciales del trabajo experimental, cuando probablemente se estén investigando muchos factores. Este diseño proporciona el menor número de corridas con las que pueden estudiarse k factores en un diseño factorial completo.
 
-~\\El diseño $2^k$ es de particular utilidad en las etapas iniciales del trabajo experimental, cuando probablemente se estén investigando muchos factores. Este diseño proporciona el menor número de corridas con las que pueden estudiarse k factores en un diseño factorial completo.
+~\\El modelo estadístico para un diseño $2^k$ incluiría k efectos principales, $\binom{k}{2}$ interacciones de dos factores, $\binom{k}{3}$ interacciones de tres factores,..., y una interacción de k factores. Es decir, para un diseño $2^k$ el modelo completo contendría $2^k-1$ efectos.
 \end{frame}
 
 \begin{frame}
 \frametitle{Diseño Factorial $ 2^{k} $}
-~\\El modelo estadístico para un diseño $2^k$ incluiría k efectos principales, $\binom{k}{2}$ interacciones de dos factores, $\binom{k}{3}$ interacciones de tres factores,..., y una interacción de k factores. Es decir, para un diseño $2^k$ el modelo completo contendría $2^k-1$ efectos.
 
 ~\\El enfoque general para el análisis estadístico del diseño $2^k$ se resume en la siguiente tabla
 \begin{table}[htbp]
   \centering
   \caption{Enfoque del diseño  $ 2^{k} $}
-  \resizebox{4.7cm}{!} {
+  \resizebox{0.7\textwidth}{!} {
 \begin{tabular}{l}
 \hline 
 1. Estimar los efectos de los factores\\
@@ -497,12 +496,31 @@ $SC_A=\frac{1}{16}(-11)^2=7.56$
 \begin{frame}
 En este caso, la fracción un medio del diseño $2^3$ está compuesto por los factores A, B, C y la interacción ABC.
 ~\\Como se utilizó la relación de definición de diseño $I=ABC$, se deducen los alias $A=BC$, $B=AC$ y $C=AB$ De esta forma si alguno de los Alias A,B,C es significativo podemos inferir que la interacción ABC también lo es.
+~\\Los efectos son
+\begin{center}
+$A=\frac{1}{4}[4+11+14+16-7-9-20-14]=-\frac{5}{4}=-1.25$
+~\\$B=\frac{1}{4}[20+14+14+16-7-9-4-11]=\frac{33}{4}=8.25$
+~\\$C=\frac{1}{4}[7+9+14+16-20-14-4-11]=-\frac{3}{4}=-0.75$
+\end{center}
+~\\Y las sumas de cuadrados son
+\begin{center}
+$SC_A=\frac{1}{8}(-5)^2=3.125$
+~\\$SC_B=\frac{1}{8}(33)^2=136.125$
+~\\$SC_C=\frac{1}{8}(-3)^2=1.125$
+~\\$SC_{total}=(7^2+9^2+\cdots+14^2+16^2)-\frac{1}{8}95^2=186.875$
+\end{center}
+\end{frame}
 
-~\\La ANOVA de la fracción un medio del diseño $2^k$ es
+
+\begin{frame}
+\begin{center}
+~\\$SC_{error}=46.5$
+\end{center}
+~\\Por tanto, la ANOVA de la fracción un medio del diseño $2^k$ es
 \begin{table}[H]
   \centering
   \caption{Análisis de varianza factorial fraccionado}
-  \resizebox{0.92\textwidth}{!}{
+  \resizebox{1\textwidth}{!}{
     \begin{tabular}{cccccc}
     \hline
     \textbf{Fuente de variación} & \textbf{Grados de libertad} & \textbf{Suma de cuadrados} & \textbf{Cuadrados medios} & \textbf{F} & \textbf{$Pr>F$}  \\
